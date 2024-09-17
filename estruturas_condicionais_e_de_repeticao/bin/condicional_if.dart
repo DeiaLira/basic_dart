@@ -1,16 +1,18 @@
-import 'package:hello_word/condicional_if.dart' as hello_word;
+//import 'package:hello_word/condicional_if.dart' as hello_word;
+
+import 'dart:convert';
+import 'dart:io';
 
 void main(List<String> arguments) {
-  //Média simples
-  double primeiroBimestre = 3;
-  double segundoBimestre = 8;
-  double terceiroBimestre = 1;
-  double quartoBimestre = 4;
+  print('Digite a primeira nota:');
+  var response = stdin.readLineSync(encoding: utf8);
+  double primeiroBimestre = double.parse(response ?? '0');
 
-  double media = (primeiroBimestre +
-                  segundoBimestre +
-                  terceiroBimestre +
-                  quartoBimestre) / 4;
+  print('Digite a segunda nota:');
+  response = stdin.readLineSync(encoding: utf8);
+  double segundoBimestre = double.parse(response ?? '0');
+
+  double media = (primeiroBimestre + segundoBimestre) / 2;
 
   if (media >= 7) {
     print('O aluno está aprovado, e possui média $media');
@@ -22,6 +24,7 @@ void main(List<String> arguments) {
 
   //If ternário (apenas para deduções simples)
 
-  String resultsdoSimplificado = (media >= 7) ? "O aluno está aprovado!" : "O aluno está reprovado!";
+  String resultsdoSimplificado =
+      (media >= 7) ? "O aluno está aprovado!" : "O aluno está reprovado!";
   print(resultsdoSimplificado);
 }
