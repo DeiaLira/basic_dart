@@ -17,23 +17,45 @@ void main(List<String> arguments) {
 
   double resultado = 0;
 
-  if (operacao == '+') {
-    resultado = (operando_um + operando_dois);
-    print('Sua soma é: $resultado');
-  } else if (operacao == '-') {
-    resultado = (operando_um - operando_dois);
-    print('Sua subtração é: $resultado');
-  } else if (operacao == '*') {
-    resultado = (operando_um * operando_dois);
-    print('Sua multiplicação é: $resultado');
-  } else if (operacao == '/') {
-    resultado = (operando_um / operando_dois);
-    print('Sua divisão é: $resultado');
+  switch (operacao) {
+    case "+":
+      resultado = (operando_um + operando_dois);
+      print('Sua soma é: $resultado');
+      break;
+    case "-":
+      resultado = (operando_um - operando_dois);
+      print('Sua subtração é: $resultado');
+      break;
+    case "*":
+      resultado = (operando_um * operando_dois);
+      print('Sua multiplicação é: $resultado');
+      break;
+    case "/":
+      resultado = (operando_um / operando_dois);
+      print('Sua divisão é: $resultado');
+      break;
+    default:
+      print('Operação inválida!');
+      exit(0);
   }
+
+  //if (operacao == '+') {
+    //resultado = (operando_um + operando_dois);
+    //print('Sua soma é: $resultado');
+  //} else if (operacao == '-') {
+    //resultado = (operando_um - operando_dois);
+    //print('Sua subtração é: $resultado');
+  //} else if (operacao == '*') {
+    //resultado = (operando_um * operando_dois);
+    //print('Sua multiplicação é: $resultado');
+  //} else if (operacao == '/') {
+    //resultado = (operando_um / operando_dois);
+    //print('Sua divisão é: $resultado');
+  //}
 
   //If ternário (apenas para deduções simples)
 
   //String resultsdoSimplificado =
-      //(media >= 7) ? "O aluno está aprovado!" : "O aluno está reprovado!";
+  //(media >= 7) ? "O aluno está aprovado!" : "O aluno está reprovado!";
   //print(resultsdoSimplificado);
 }
