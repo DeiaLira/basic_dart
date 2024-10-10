@@ -43,22 +43,26 @@ String airConsole() {
   return (input ?? "");
 }
 
-double sum(numberOne, numberTwo) {
+void calculaOperacao() {
+  
+}
+
+double sum(double numberOne, double numberTwo) {
   double sum = numberOne + numberTwo;
   return sum;
 }
 
-double subtraction(numberOne, numberTwo) {
+double subtraction(double numberOne, double numberTwo) {
   double subtraction = numberOne - numberTwo;
   return subtraction;
 }
 
-double multiplication(numberOne, numberTwo) {
+double multiplication(double numberOne, double numberTwo) {
   double multiplication = numberOne * numberTwo;
   return multiplication;
 }
 
-double division(numberOne, numberTwo) {
+double division(double numberOne,double numberTwo) {
   double division = numberOne / numberTwo;
   return division;
 }
